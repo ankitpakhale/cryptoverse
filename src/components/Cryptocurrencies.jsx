@@ -5,8 +5,7 @@ import { Row, Col, Card, Input } from "antd";
 import { Link } from "react-router-dom";
 
 const Cryptocurrencies = (simplified) => {
-  const count = simplified ? 10 : 100;
-  console.log(simplified, "simplified", count);
+  const count = simplified.simplified ? 10 : 100;
 
   // const [searchTerm, setSearchTerm] = useState();
 
@@ -14,8 +13,6 @@ const Cryptocurrencies = (simplified) => {
   const coinData = data?.data?.coins;
 
   // let coinData = null;
-
-  console.log("coinData", coinData);
 
   // useEffect(() => {
   //   console.log('object');
