@@ -6,6 +6,9 @@ import store from "./app/store";
 import { Provider } from "react-redux";
 // import "antd/dist/antd.css";
 
+// Refer to below blog
+// https://captain-eo.hashnode.dev/an-easy-way-to-make-api-calls-redux-toolkit
+
 ReactDOM.render(
   <Router>
     <Provider store={store}>
