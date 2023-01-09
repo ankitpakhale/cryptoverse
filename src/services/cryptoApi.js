@@ -5,7 +5,7 @@ const cryptoApiHeaders = {
   "X-RapidAPI-Host": "coinranking1.p.rapidapi.com",
 };
 
-const baseUrl = "https://coinranking1.p.rapidapi.com/coins";
+const baseUrl = "https://coinranking1.p.rapidapi.com";
 
 const createRequest = (url) => ({ url, headers: cryptoApiHeaders });
 
@@ -18,5 +18,4 @@ export const cryptoApi = createApi({
     }),
   }),
 });
-
 export const { useGetCryptosQuery } = cryptoApi;
